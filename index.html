@@ -6,8 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Clicker</title>
   </head>
-  <body>
-    <div class="container"></div>
+<body>
+    <header class="header">
+      <h1 id="header__name">Fred the Baker Baking Company</h1>
+
+      <nav class="header__nav">
+        <a href="#aboutUs">About Us</a>
+        <a href="#aboutDonutClicker">About Donut Clicker</a>
+        <a href="#contactInfo">Contact Us</a>
+      </nav>
+    </header>
+  <!--
+
+
+
     <script src="./index.js"></script>
   </body>
+</html> --> 
+
+    <body>
+      <div class="container">
+        <section class="main">
+          <section class="main__clicks">
+        <div id = "donut" onclick="makeDonut()">
+            <img src="images/donut.jpg" alt="Donut"/>
+        </div>
+        
+        <p class="main__clicks_donutsMade">
+          Donuts Made:
+        </p>
+        <div id = "donuts"></div>
+
+      </section>
+
+      <section class="main__autoClicker">
+
+        <button class="main__autoClicker_button">Auto Clickers</button>
+        <p class="main__autoClicker_purchased">Auto Clickers Purchased: 
+          <div id="autoClickers"></div>
+        </p>
+
+      </section>
+
+      <section class="main__multiplier">
+
+        <button class="main__multiplier_button">Multipliers</button>
+        <p class="main__multiplier_purchased">Multipliers Purchased: 
+          <div id="multipliers"></div>
+        </p>
+
+      </section>
+
+      
+        <div id= "upgradeLevel"></div>
+
+
+        <p>Intructions: Click the cookie - this makes more cookies.</p>
+        <p>You will AUTOMATICALLY upgrade according the following table of upgrade costs! :)</p>
+
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>How many cookies can it make?</td>
+                <td>cost</td>
+            </tr>
+            
+            <tr>
+                <td>Granny!</td>
+                <td>Granny make 2x's as much!</td>
+                <td>30 cookies!</td>
+            </tr>
+            
+            <tr>
+                <td>Factory</td>
+                <td> Factory makes 10x's as much!</td>
+                <td>500 cookies!</td>
+            </tr>
+            
+            <tr>
+                <td>Plant</td>
+                <td> Plant makes 30x's as much!</td>
+                <td>1,000 cookies!</td>
+            </tr>
+            
+             <tr>
+                <td>SuperPlant</td>
+                <td> SuperFactory makes 1000x's as much!</td>
+                <td>100,000 cookies!</td>
+            </tr>
+
+        </table>
+      </section>
+      </div>
+        <script src="./index.js"></script>
+    </body>
 </html>
