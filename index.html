@@ -4,10 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Donut Clicker</title>
   </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+<body>
+    <header class="header">
+      <h1 id="header__name">Fred the Baker Baking Company</h1>
+
+      <nav class="header__nav">
+        <a href="#aboutUs">About Us</a>
+        <a href="#aboutDonutClicker">About Donut Clicker</a>
+        <a href="#contactInfo">Contact Us</a>
+      </nav>
+    </header>
+    <body>
+      <div class="container">
+        <section class="main">
+          <section class="main__clicks">
+            <div id = "donut" onclick="makeDonut()">
+              <img src="images/donut.jpg" alt="Donut"/>
+            </div>
+        
+          <p class="main__clicks_donutsMade">
+            Donuts Made:
+          </p>
+          <div id = "donuts"></div>
+
+          </section>
+
+          <section class="main__autoClicker">
+
+            <button class="main__autoClicker_button" onclick="buyAutoClicker()">Auto Clickers</button>
+            <p class="main__autoClicker_purchased">Auto Clickers Purchased: <div id="autoClickers"></div>
+            </p>
+
+          </section>
+
+          <section class="main__multiplier">
+
+            <button class="main__multiplier_button">Multipliers</button>
+            <p class="main__multiplier_purchased">Multipliers Purchased: 
+            <div id="multipliers"></div>
+            </p>
+          </section>
+        </section>
+      </div>
+      <script src="./index.js"></script>
+    </body>
 </html>
