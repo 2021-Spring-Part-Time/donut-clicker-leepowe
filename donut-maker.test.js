@@ -8,13 +8,13 @@ describe("the creation of DonutMaker", () => {
   });
 
   test("Can it purchase an autoclicker and remove spent donuts?", () => {
-    const underTest = new DonutMaker(100, 0, 0);
+    const underTest = new DonutMaker(100, 0, 100);
     underTest.addAutoClicker();
     expect(underTest.numAutoClickers).toEqual(1);
     expect(underTest.numDonuts).toEqual(0);
   });
   test("Should not allow autoclicker purchase with 99 Donuts", () => {
-    const underTest = new DonutMaker(99, 0, 0);
+    const underTest = new DonutMaker(99, 0, 100);
     underTest.addAutoClicker();
     expect(underTest.numAutoClickers).toEqual(0);
   });
@@ -27,5 +27,10 @@ describe("the creation of DonutMaker", () => {
     const underTest = new DonutMaker(200, 1, 100);
     underTest.addAutoClicker();
     expect(underTest.costAutoClicker).toEqual(110);
+  });
+  test("Second autoclicker will cost an additional 10%", () => {
+    const underTest = new DonutMaker(200, 1, 110);
+    underTest.addAutoClicker();
+    expect(underTest.costAutoClicker).toEqual(121);
   });
 });
