@@ -23,6 +23,7 @@ class DonutMaker {
     if (this.numAutoClickers > 0) {
       this.numDonuts += this.numAutoClickers * 1;
     }
+    activateMultipliers();
   }
 
   addMultiplier(){
