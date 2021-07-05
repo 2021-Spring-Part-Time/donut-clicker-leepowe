@@ -51,12 +51,12 @@ describe("the creation of DonutMaker", () => {
     underTest.activateMultipliers();
     expect(underTest.numDonuts).toEqual(1.2);
   });
-  test("Second autoclicker will cost an additional 10%", () => {
+  test("Second multiplier will cost an additional 10%", () => {
     const underTest = new DonutMaker(200, 1, 100, 0, 10);
     underTest.addMultiplier();
     expect(underTest.costMultiplier).toEqual(11);
   });
-  test("Second autoclicker will cost an additional 10%", () => {
+  test("Additional multiplier will cost an additional 10%", () => {
     const underTest = new DonutMaker(200, 1, 110, 1, 11);
     underTest.addMultiplier();
     expect(underTest.costMultiplier).toEqual(12.1);
