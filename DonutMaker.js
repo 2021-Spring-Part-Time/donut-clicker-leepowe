@@ -35,7 +35,8 @@ class DonutMaker {
 
   activateMultipliers() {
       if (this.numMultipliers > 0) {
-          this.numDonuts = Math.pow(1.2, this.numMultipliers);
+          this.numDonuts += Math.pow(1.2, this.numMultipliers);
+          Math.round(this.numDonuts);
       }
   }
 }

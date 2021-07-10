@@ -1,24 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 * {
+  box-sizing: border-box;
+  font-family: 'Righteous', serif;
+  line-height: 1.618rem;
   margin: 0;
   padding: 0;
 }
 
+#AboutUs, #About__CookieClicker, #ContactUs {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
 body {
-  background-image: url(images/Doughnut-Wallpaper-10-1900-X-1202-stmed.net.jpg);
-  background-size: cover;
+  background-color: aqua;
 }
 
 h1 {
   padding: 0px 15px;
 }
 
+h2 {
+    padding-bottom: .5rem;
+}
+
 header {
   background-color: #fff;
+  padding-top: .75rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header__name{
+    margin-left: 1rem;
+}
+
+html {
+    margin: 2rem auto;
+    max-width: 60rem;
+    width: 90%;
+}
+
+img {
+    width: 15%;
+  }
+
+.landingPage {
+    padding-top: 3rem;
+    margin-top: 3rem;
 }
 
 nav {
+
   background-color: #fff;
-  height: 60px;
+  height: 3.5rem;
   width: 100%;
 }
 
@@ -75,6 +113,11 @@ nav ul li ul li a:hover {
   border-radius: 3px;
 }
 
-img {
-  width: 30%;
+section {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#thisIsWhatWeInTheIndustryReferToAsAJoke-montyPython{
+    font-size: 2rem;
 }
