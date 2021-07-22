@@ -4,10 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Donut Clicker</title>
   </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+<body>
+    <header class="header">
+      <h1 id="header__name">Fred the Baker Baking Company</h1>
+
+      <nav class="header__nav">
+        <p>Donut Clicker</p>
+        <ul class="header__nav_dropdown">
+          <li> <a href="#">Menu</a> 
+            <ul>
+              <li><a href="index.html" id="gameButton">Play Donut Clicker</a></li>
+              <li><a href="#About__CookieClicker" id="aboutCookieClickerButton">About Cookie Clicker</a></li>              
+              <li><a href="#AboutUs" id="aboutUsButton">About Us</a></li>
+              <li><a href="#ContactUs" id="contactUsButton">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <div class="container">
+        <section class="landingPage">
+          <h2 class="landingPage__title">Hello, Welcome to Donut Clicker.</h2>
+          <p class="landingPage__body">We are the dreamers of dreams.  We are the Champions.
+            We welcome you to the world of donuts.  For your donut loving entertainment. LAAAAAAAAADDDDIES and gentlemen, boys and girls, children of all ages.  Fred 'the Baker' Baking Company proudly brings to you Donut Clicker: The Home Game!
+          </p>
+
+        </section>
+        <section class="main">
+          <img src="images/donut.jpg" alt="Donut"/>
+          <section class="main__clicks">
+            <div id = "donut">
+              <button class="main__donut_button" >Will Click For Donuts!</button>
+            </div>
+            <section class="donutDescription">Each click without a multiplier will make one donut.</section>
+        
+          <p class="main__clicks_donutsMade">
+            Donuts Made:  <div id ="donuts"></div>
+          </p>
+
+          </section>
+
+          <section class="main__autoClicker">
+
+            <section class="autoClickerDescription">Your first auto clicker will cost 100 donuts and make 1 donut every second.<br> Each subsequent auto clicker will cost an extra 10 percent.</section>
+
+            <button class="main__autoClicker_button" >Auto Clickers</button>
+            <p class="main__autoClicker_purchased">Auto Clickers Purchased: <div id="autoClickers"></div>
+            </p>
+
+          </section>
+
+          <section class="main__multiplier">
+            
+            <section class="multiplierDescription">Your first multiplier will cost 10 donuts and each multiplier increase the amount of donuts made from each click by 20 percent. <br> The cost of subsequent multipliers will increase by 10 percent.</section>
+
+            <button class="main__multiplier_button" >Multipliers</button>
+            <p class="main__multiplier_purchased">Multipliers Purchased: 
+            <div id="multipliers"></div>
+            </p>
+          </section>
+        </section>
+      </div>
+
+      <div id="AboutUs">
+        <h2>About Us</h2>
+        <p id="AboutUs__Body">Fred the baker is a man who enjoys baking baked good.  Weither he bakes on his trusted baking pan that he had from a young age of 97 or he forgot the thought that he aught nought forgot.  He was always sharp as an onion which as we all know has layers and is not as delicious as parfaits.  Fred forgot why he started talking which is why he decided to let you do the donut cooking from here on out with this wonderful tribute to cookie clicker.  Enjoy.</p>
+      </div>
+      <div id="About__CookieClicker">
+        <h2>About Donut Clicker</h2>
+        <p id="About__CookieClicker_Body">Cookie Clicker is an incremental game created by French programmer Julien "Orteil" Thiennot in 2013. The user initially clicks on a big cookie on the screen, earning a single cookie per click. They can then spend their earned cookies upon purchasing assets such as "cursors" and other "buildings" that automatically produce cookies. Upgrades are also available and can improve the efficiency of clicks and buildings, among many other mechanics that allow the user to earn cookies in different ways. Though the game has no ending,[1] it has hundreds of achievements, and users may aim to reach milestone numbers of cookies.
+
+        </p><p>The game is one of the first and most important in the genre of incremental games and has a dedicated fanbase. Though the first version was coded in one night, Cookie Clicker is regularly updated. It has been widely described as addictive, and it has been noted that the game almost does not require a human to play it</p>
+      </div>
+      <div id="ContactUs">
+        <h2>Contact Us</h2>
+        <p id="ContactUs__Body">
+          <ul>
+            <li>Social Media: <a href="https://www.linkedin.com/in/leempowell/">LinkedIn</a></li>
+            <li>Site: <a href="https://leepowe.github.io/">GitHub</a></li>
+            <li>Email: donutvigor@do-nut.net</li>
+            <li>Phone: (000)000-0000 (because donuts)</li>
+            <p id="thisIsWhatWeInTheIndustryReferToAsAJoke-montyPython">( o )( o )( o ) mmmmmmmm.........</p>
+          </ul>
+        </p>
+      </div>
+    </body>
+    <footer>
+      &copy; 2021 Lee Powell
+    </footer>
+  <script src="./app.js"></script>
 </html>
